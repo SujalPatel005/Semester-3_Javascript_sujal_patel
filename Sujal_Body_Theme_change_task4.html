@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Body Theme</title>
+    <script type="text/javascript">
+        // div element
+        function changecolor(){
+        document.getElementById("demo").style.backgroundColor = "yellowgreen";
+        }
+        function change(){
+        document.getElementById("demo").style.backgroundColor = prompt("enter color");
+        }
+        //body color
+        function changecolor1(){
+        document.getElementById("demo1").style.backgroundColor = "orange";
+        }
+        function change1(){
+        document.getElementById("demo1").style.backgroundColor = prompt("enter color");
+        }
+        </script>
+        <style>
+            body{
+                background-color: rgb(102, 94, 83);
+            }
+        .container{
+            width: 400px;
+            height:400px;
+            margin: auto;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body id="demo1">
+    <h1 align="center">Change Color of this box what you want !!.. </h1>
+    <div class="container" id="demo"></div>
+    <br>
+    <h1>To change box colour</h1>
+    <button type="submit" onclick="changecolor()">CHANGE COLOR Static</button>
+    <button type="submit" onclick="change()">CHANGE COLOR Dynamic</button><br><br>
+    <h1>To change body colour</h1>
+    <button type="submit" onclick="changecolor1()">CHANGE COLOR Static</button>
+    <button type="submit" onclick="change1()">CHANGE COLOR Dynamic</button>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function hour()
+    {
+        if(texth.value <12)
+        {
+            texth.value =parseInt(texth.value) +1;    
+        }
+        else
+        {
+            texth.value=0;
+        }
+    
+
+    }
+    function minute()
+    {
+        if(textm.value <59)
+        {
+            textm.value =parseInt(textm.value) +1;    
+        }
+        else
+        {
+            textm.value=0;
+        }
+    
+
+    }
+    function second()
+    {
+        if(texts.value <59)
+        {
+            texts.value =parseInt(texts.value) +1;    
+        }
+        else
+        {
+            texts.value=0;
+        }
+    
+
+    }
+    function reset()
+    {
+        let C=parseInt(texts.value=0);
+        let A=parseInt(texth.value=0);
+        let B=parseInt(textm.value=0);
+    }
+
+</script>
+
+<body>
+    <div style="text-align:center ;">
+    Hours:<input type="text" value="0" width="200px" id="texth" style="margin-top: 10px; background-color:aqua;"/>
+    <input type="button" value="hours" id="hrs" onclick="hour()" style="background-color:red;"><br>
+    Minutes:<input type="text" value="0" width="200px" id="textm" style="margin-top: 10px; background-color:aqua;"/>
+    <input type="button" value="minutes" id="hrs" onclick="minute()" style="background-color:red;"><br>
+    Seconds:<input type="text" value="0" width="200px" id="texts"  style="margin-top: 10px; background-color:aqua;"/>
+    <input type="button" value="seconds" id="hrs" onclick="second()" style="background-color:red;">
+    </div>
+    <div style="text-align: center; margin-top:10px; margin-left:3px;" >
+        <input type="button" value="start" id="str" onclick="start()" style="background-color:beige;">&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <input type="button" value="stop" id="sto" onclick="stop()" style="background-color:beige;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="reset" id="res" onclick="reset()" style="background-color:beige;">&nbsp;&nbsp;&nbsp;&nbsp;
+        </div> 
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <script type="text/javascript">
+        function addNum() {
+            const N1 = parseInt(Num1.value);
+            const N2 = parseInt(Num2.value);
+            Ans.value = N1+N2;
+        };
+        function subNum() {
+            const N1 = parseInt(Num1.value);
+            const N2 = parseInt(Num2.value);
+            Ans.value = N1-N2;
+        };
+        function mulNum() {
+            const N1 = parseInt(Num1.value);
+            const N2 = parseInt(Num2.value);
+            Ans.value = N1 * N2;
+        };
+        function divNum() {
+            const N1 = parseInt(Num1.value);
+            const N2 = parseInt(Num2.value);
+            Ans.value = N1 / N2;
+        };
+        function areaofcircle() {
+            const N = parseInt(Num.value);
+            ansofcircle.value = 2 * 3.14159 * N;
+        };
+    </script>
+    <style>
+        .container1{
+            display: flex;
+            margin: 20px 16% 0 16%;
+            width: 60%;
+            padding: 5%;
+            border-radius: 10px;
+            background-color: yellowgreen;
+        }
+
+        .container2 {
+            display: flex;
+            margin: 0px 16% 0 16%;
+            width: 60%;
+            padding: 5%;
+            border-radius: 10px;
+            background-color: yellowgreen;
+        }
+
+        .labal {
+            font-size: 25px;
+            margin-top: 8px;
+        }
+
+        #name {
+            margin-bottom: 10px;
+        }
+        .btn{
+            padding: 20px;
+        }
+        .input {
+            margin-left: 10px;
+            padding: 10px;
+        }
+
+        .input input {
+            padding: 5px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Calculater</h1>
+    <form>
+    <div class="container1">
+        <div class="labal">
+            <labal id="name">Number 1:- </labal><br><br>
+            <labal id="name">Number 2:- </labal><br><br>
+            <labal id="name">Total:-</labal>
+        </div>
+        <div class="input">
+            <input type="text" value="0" placeholder="Enter First Number.. " id="Num1"><br>
+            <input type="text" value="0" placeholder="Enter Second Number.. " id="Num2"><br>
+            <input type="text" value="0" id="Ans" readonly>
+        </div>
+        <div class="input">
+            <input type="button" value="   ADD NUMBER       " type="submit" onclick="addNum()"><br>
+            <input type="button" value="MULTIPLY NUMBER" type="submit" onclick="mulNum()"><br>
+            <input type="button" value="Reset" type="reset">
+
+        </div>
+        <div class="input">
+            <input type="button" value="SUBTRACT NUMBER" type="submit" onclick="subNum()"><br>
+            <input type="button" value="     DIVIDE NUMBER     " type="submit" onclick="divNum()">
+        </div>
+    </div>
+    </form>
+    <h1 align="center">Calculate Area Of Circle</h1>
+    <div class="container2">
+        <div class="labal">
+            <labal id="name">Redius:- </labal><br><br>
+            <labal id="name">Total:-</labal>
+        </div>
+        <div class="input">
+            <input type="text" value="0" placeholder="Enter First Number.. " id="Num"><br>
+            <input type="text" value="0" id="ansofcircle" readonly><br>
+            <input type="button" value="AREA OF CIRCLE" type="submit" onclick="areaofcircle()">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
